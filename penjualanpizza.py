@@ -24,8 +24,11 @@ R_squareed = SSR / SST
 print(f"Slope: {slope}")
 print(f"Intercept: {intercept}")
 print(f"SSR (Sum of Squares Regression): {SSR}")
-print(f"SST (Sum of Squares Error): {SSE}")
+print(f"SSE (Sum of Squares Error): {SSE}")
 print(f"SST (Total Sum of Squares): {SST}")
 print(f"R-squared: {R_squareed}")
 
+plt.plot(pendapatan_rata_rata, predicted_values, color='Blue', linewidth=2, label='Garis Regresi')
+
+plt.legend()
 plt.show()
